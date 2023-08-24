@@ -1,5 +1,5 @@
-//bacgrounds
-$body-bg: #ff55;
-
-//fonts
-$basic-family: 'Roboto', 'Arial', 'Helvetica', sans-serif;
+:root {
+    --index: calc(1vw + 1svh);
+    --color-header: #f4efec;
+    --color-text: #cdc6c3;
+}

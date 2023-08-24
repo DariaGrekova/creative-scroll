@@ -1,0 +1,8 @@
+.hero {
+    &__img {
+        position: absolute;
+        right: 0;
+        top: 8vh;
+        width: calc(var(--index) * 36);
+    }
+}

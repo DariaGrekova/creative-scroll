@@ -1,8 +1,27 @@
 .hero {
+    height: 100dvh;
+    position: relative;
+
+    &__content {
+        position: absolute;
+        bottom: 12svh;
+
+        @include media-breakpoint-down(sm) {
+            bottom: 17svh;
+        }
+    }
     &__img {
         position: absolute;
         right: 0;
         top: 8vh;
         width: calc(var(--index) * 36);
+        z-index: -1;
+
+        @include media-breakpoint-down(sm) {
+            width: calc(var(--index) * 25);
+            top: 15dvh;
+            left: 0;
+            margin: 0 auto;
+        }
     }
 }

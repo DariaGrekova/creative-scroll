@@ -5,20 +5,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Creative scroll</title>
-    <link rel="stylesheet" href="css/main.css?t=1692893440557">
-    <script src="js/main.js?t=1692893440557" defer></script>
+    <link rel="stylesheet" href="css/main.css?t=1692949428534">
+    <script src="libs/gsap/gsap.min.js?t=1692949428534" defer></script>
+    <script src="libs/gsap/ScrollTrigger.min.js?t=1692949428534" defer></script>
+    <script src="libs/gsap/ScrollSmoother.min.js?t=1692949428534" defer></script>
+    <script src="js/main.js?t=1692949428534" defer></script>
 </head>
 
 <body>
     <maim class="main">
-        <section class="hero">
-<picture><source srcset="./img/main_picture.avif" type="image/avif"><source srcset="./img/main_picture.webp" type="image/webp"><img src="./img/main_picture.png" alt="hero" class="hero__img"></picture>
+        <div class="wrapper">
+            <div class="content">
+                <section class="hero">
+<picture><source srcset="./img/main_picture.avif" type="image/avif"><source srcset="./img/main_picture.webp" type="image/webp"><img data-speed=".3" src="./img/main_picture.png" alt="hero" class="hero__img"></picture>
     <div class="container">
-        <div class="hero__content">
+        <div data-speed=".8" class="hero__content">
             <h1 class="main-title">creative scroll</h1>
         </div>
     </div>
 </section>
+                <section class="portfolio">
+    <div class="container">
+        <div class="portfolio__gallery gallery">
+            <div class="gallery__left">
+                <div class="gallery__item">
+<picture><source srcset="./img/works/1.avif" type="image/avif"><source srcset="./img/works/1.webp" type="image/webp"><img src="./img/works/1.jpg" alt="preview" class="gallery__img"></picture>
+                </div>
+                <div class="gallery__item">
+<picture><source srcset="./img/works/2.avif" type="image/avif"><source srcset="./img/works/2.webp" type="image/webp"><img src="./img/works/2.jpg" alt="preview" class="gallery__img"></picture>
+                </div>
+                <div class="gallery__item portfolio__text">
+                    <h2 class="portfolio__title">Creative floating scroll with amazing parallax effect</h2>
+                    <p class="portfolio__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+                </div>
+                <div class="gallery__item">
+<picture><source srcset="./img/works/6.avif" type="image/avif"><source srcset="./img/works/6.webp" type="image/webp"><img src="./img/works/6.jpg" alt="preview" class="gallery__img"></picture>
+                </div>
+            </div>
+            <div data-speed="1.035" class="gallery__right">
+                <div class="gallery__item">
+                    <h2 class="portfolio__title">Creative floating scroll with amazing parallax effect</h2>
+                    <p class="portfolio__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+                </div>
+                <div class="gallery__item">
+<picture><source srcset="./img/works/3.avif" type="image/avif"><source srcset="./img/works/3.webp" type="image/webp"><img src="./img/works/3.jpg" alt="preview" class="gallery__img"></picture>
+                </div>
+                <div class="gallery__item">
+<picture><source srcset="./img/works/5.avif" type="image/avif"><source srcset="./img/works/5.webp" type="image/webp"><img src="./img/works/5.jpg" alt="preview" class="gallery__img"></picture>
+                </div>
+                <div class="gallery__item">
+<picture><source srcset="./img/works/4.avif" type="image/avif"><source srcset="./img/works/4.webp" type="image/webp"><img src="./img/works/4.jpg" alt="preview" class="gallery__img"></picture>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+            </div>
+        </div>
+
     </maim>
 </body>
 

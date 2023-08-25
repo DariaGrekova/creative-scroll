@@ -1,0 +1,69 @@
+.portfolio {
+    padding: calc(var(--index) * 8) 0;
+    // .portfolio__gallery
+
+    &__gallery {
+    }
+
+    // .portfolio__title
+
+    &__title {
+        font-size: 2rem;
+        line-height: 2.4rem;
+        color: var(--color-header);
+    }
+
+    // .portfolio__text
+
+    &__text {
+        color: var(--color-text);
+        line-height: 1.75;
+    }
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10vw;
+
+    @include media-breakpoint-down(sm) {
+        flex-direction: column-reverse;
+    }
+    // .gallery__left
+
+    &__left {
+        display: grid;
+        grid-auto-flow: row;
+        row-gap: var(--gallery-gap);
+        padding-top: calc(var(--index) * 2);
+    }
+
+    // .gallery__right
+
+    &__right {
+        display: grid;
+        grid-auto-flow: row;
+        row-gap: var(--gallery-gap);
+        padding-bottom: calc(var(--index) * 2);
+    }
+
+    &__item {
+        max-width: calc(var(--index) * 15);
+        max-height: 90svh;
+        border-radius: 8px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+
+        @include media-breakpoint-down(sm) {
+            max-width: calc(var(--index) * 90);
+        }
+    }
+
+    &__img {
+        width: 100%;
+        height: auto;
+    }
+}

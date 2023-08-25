@@ -1,2 +1,2 @@
-import {testFunction} from './scripts/test';
-testFunction();
+import { animation } from './scripts/animation';
+animation();

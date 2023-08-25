@@ -3,8 +3,6 @@
 @import "reset"; //сборс стилей
 @import "fonts"; //подключаем шрифты (локально)
 
-@import "blocks/hero";
-
 body {
     background-image: url("../img/bg.jpg");
     background-size: 50px;
@@ -20,7 +18,17 @@ body {
 .main-title {
     font-size: calc(var(--index) * 8);
     line-height: 0.9;
-    position: absolute;
-    bottom: 12svh;
     width: min-content;
+
+    @include media-breakpoint-down(sm) {
+        font-size: calc(var(--index) * 6);
+    }
 }
+.content,
+.hero,
+.hero__content,
+.gallery > * {
+    will-change: transform;
+}
+@import "blocks/hero";
+@import "blocks/portfolio";
